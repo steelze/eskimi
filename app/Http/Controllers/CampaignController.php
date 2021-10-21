@@ -23,7 +23,7 @@ class CampaignController extends Controller
 
 
         $campaign = Campaign::create(array_merge($request->validated(), ['images' => $paths]));
-        return response()->json($campaign);
+        return response()->json($campaign, 201);
     }
 
     public function show(Campaign $campaign): JsonResponse
