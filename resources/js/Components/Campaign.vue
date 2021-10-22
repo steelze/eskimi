@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-md-4" v-for="image in campaign.images" :key="image" >
                         <div class="card">
-                            <img :src="`/${image}`" class="card-img-top" alt="" />
+                            <img :src="`/storage/${image}`" class="card-img-top" alt="" />
                         </div>
                     </div>
                 </div>
