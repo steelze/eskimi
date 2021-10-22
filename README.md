@@ -47,7 +47,12 @@ These instructions will get you a copy of the project up and running on your loc
     ```
     $ git clone https://github.com/Steelze/wayfarer.git
     $ cd eskimi
-    $ npm install
+    $ docker run --rm \
+        -u "$(id -u):$(id -g)" \
+        -v $(pwd):/var/www/html \
+        -w /var/www/html \
+        laravelsail/php74-composer:latest \
+        composer install --ignore-platform-reqs
     ```
   - Duplicate and save .env.example as .env and fill in environment variables and run migration
     ```
