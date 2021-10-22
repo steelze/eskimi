@@ -15,6 +15,7 @@ This application is used to create a simple application for managing advertising
 
 ## Technology Stack
   - [PHP](https://nodejs.org/)
+  - [Javascript](https://nodejs.org/)
   - [Laravel](https://expressjs.com/)
   - [MySQL](https://www.postgresql.org/)
   - [Sail](https://www.npmjs.com/package/express-validator)
@@ -56,17 +57,15 @@ These instructions will get you a copy of the project up and running on your loc
     $ cp .env.example .env
     $ ./vendor/bin/sail up -d
     $ ./vendor/bin/sail artisan key:generate
+  ### Run Migration
     $ vendor/bin/sail bash
-    $php artisan migrate --seed
-    $ http://localhost:81/
+    $ php artisan storage:link
+    $ php artisan migrate --seed
     ```
-  - Duplicate and save .env.example as .env and fill in environment variables and run migration
+  - Visit http://localhost:81/ on your browser
+### Stop Application
     ```
-### Run The Service
-    ```
-    $ ./vendor/bin/sail up -d #start application
-    $ ./vendor/bin/sail artisan migrate #run migration
-    $ ./vendor/bin/sail down #stop application
+    $ ./vendor/bin/sail down -v
     ```
 
   ### Testing
