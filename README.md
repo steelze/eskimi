@@ -56,6 +56,8 @@ These instructions will get you a copy of the project up and running on your loc
     $ cp .env.example .env
     $ ./vendor/bin/sail up -d
     $ ./vendor/bin/sail artisan key:generate
+    $ vendor/bin/sail bash
+    $php artisan migrate --seed
     $ http://localhost:81/
     ```
   - Duplicate and save .env.example as .env and fill in environment variables and run migration
