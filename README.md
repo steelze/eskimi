@@ -53,6 +53,10 @@ These instructions will get you a copy of the project up and running on your loc
         -w /var/www/html \
         laravelsail/php74-composer:latest \
         composer install --ignore-platform-reqs
+    $ cp .env.example .env
+    $ ./vendor/bin/sail up -d
+    $ ./vendor/bin/sail artisan key:generate
+    $ http://localhost:81/
     ```
   - Duplicate and save .env.example as .env and fill in environment variables and run migration
     ```
