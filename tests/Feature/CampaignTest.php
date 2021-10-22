@@ -34,7 +34,7 @@ class CampaignTest extends TestCase
 
     public function test_can_fetch_campaigns()
     {
-        $campaigns = Campaign::factory()->count(2)->make();
+        $campaigns = Campaign::factory()->count(2)->create();
 
         $response = $this->json('GET', '/campaigns');
 

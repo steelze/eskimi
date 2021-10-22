@@ -14,13 +14,13 @@ This application is used to create a simple application for managing advertising
 
 
 ## Technology Stack
-  - [PHP](https://nodejs.org/)
-  - [Javascript](https://nodejs.org/)
-  - [Laravel](https://expressjs.com/)
-  - [MySQL](https://www.postgresql.org/)
-  - [Sail](https://www.npmjs.com/package/express-validator)
+  - [PHP](https://www.php.net)
+  - Javascript
+  - [Laravel](https://laravel.com)
+  - [MySQL](https://www.mysql.com)
+  - [Sail](https://laravel.com/docs/8.x/sail)
   ### Testing tools
-  - [PHPUnit](https://babeljs.io) 
+  - [PHPUnit](https://phpunit.de) 
 
 ## Application Features
 * User can create and edit an advertising campaign;
@@ -39,10 +39,10 @@ Method | Route | Description
 ## Setup
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-  ### Dependencies
+  #### Dependencies
   - [Docker](https://docs.docker.com/desktop/mac/install/)
  
-  ### Getting Started
+  #### Getting Started
   - Install and setup docker
   - Open terminal and run the following commands
     ```
@@ -57,16 +57,18 @@ These instructions will get you a copy of the project up and running on your loc
     $ cp .env.example .env
     $ ./vendor/bin/sail up -d
     $ ./vendor/bin/sail artisan key:generate
-  ### Run Migration
+    ```
+  #### Run Migration
     $ vendor/bin/sail bash
     $ php artisan storage:link
     $ php artisan migrate --seed
-    ```
+    $ exit
+  #### Install Javascript Dependencies
+    $ vendor/bin/sail npm install
+    $ vendor/bin/sail npm run dev
   - Visit http://localhost:81/ on your browser
-### Stop Application
-    ```
+  #### Stop Application
     $ ./vendor/bin/sail down -v
-    ```
 
   ### Testing
   ```
