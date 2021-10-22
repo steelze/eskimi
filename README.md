@@ -5,12 +5,12 @@ This application is used to create a simple application for managing advertising
 
 
 ## Table of Contents
-2. <a href="#technology-stack">Technology Stack</a>
-4. <a href="#application-features">Application Features</a>
-5. <a href="#api-endpoints">API Endpoints</a>
-6. <a href="#setup">Setup</a>
-7. <a href="#author">Author</a>
-8. <a href="#license">License</a>
+1. <a href="#technology-stack">Technology Stack</a>
+2. <a href="#application-features">Application Features</a>
+3. <a href="#api-endpoints">API Endpoints</a>
+4. <a href="#setup">Setup</a>
+5. <a href="#author">Author</a>
+6. <a href="#license">License</a>
 
 
 ## Technology Stack
@@ -45,7 +45,7 @@ These instructions will get you a copy of the project up and running on your loc
   - Install and setup docker
   - Open terminal and run the following commands
     ```
-    $ git clone https://github.com/Steelze/wayfarer.git
+    $ git clone https://github.com/steelze/eskimi.git
     $ cd eskimi
     $ docker run --rm \
         -u "$(id -u):$(id -g)" \
